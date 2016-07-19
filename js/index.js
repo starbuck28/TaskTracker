@@ -51,6 +51,10 @@ $("button").click(function() {
   $(".tsk-lst").append(createHTML); 
   //Change background of task item if even
   selectBackground();
+  //Reset form inputs to blank
+  $("#task").val('');
+  $("#date").val('');
+  $("#assigned").val('');
 });
 
 //Change background of even-numbered task items
