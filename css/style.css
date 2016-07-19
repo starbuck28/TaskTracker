@@ -1,0 +1,202 @@
+/******************
+General Styling
+*******************/
+html {
+  border-box;
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+body {
+  background: #e6e6e6; 
+}
+
+/*************************
+Header Styling
+*************************/
+.box-top {
+  background: #d9d9d9;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 5px 5px 0 5px;
+  border-top: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+}
+
+.header {
+  margin: 0 auto;
+  background: #e6e6e6;
+  padding: 5px 10px;
+}
+
+.header h1 {
+  margin-left: 15px;
+  
+}
+
+.header h4 {
+  margin-left: 20px;
+  margin-top: -25px;
+  color: #404040;
+  opacity: 0.6;
+}
+
+/**************************
+Main Content Styling
+**************************/
+.box-bottom {
+  background: #f2f2f2;
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 5px 5px 5px;
+  border-bottom: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+  border-left: 1px solid #FFF;
+}
+
+.create {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.create, .existing {
+  flex: 1 50%;
+  background: #FFF;
+}
+
+.existing {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.existing h3 {
+  margin-left: 10px;
+  padding-top: 20px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+
+/**********************
+Form Styling
+***********************/
+form h3 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+input[type=text] {
+  background: #e6e6e6;
+  width: 80%;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+#task, #date, #assigned {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 5px; 
+}
+
+button {
+  background: #404040;
+  color: #FFF;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 40px;
+}
+
+/*********************
+Task List Styling
+*********************/
+.existing_tasks {
+  background: #d9d9d9;
+  padding: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.tsk-lst {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  background: #FFF;
+  padding: 0;
+}
+
+.tsk-name, .tsk-date, .tsk-person {
+  display: inline;
+}
+
+.tsk-name, .tsk-date {
+  float: left;
+}
+
+.tsk-name {
+  font-size: 14px;
+  margin-left: 10px;
+  font-family: 'Times New Roman', sans-serif;
+}
+
+.tsk-date {
+  font-size: 12px;
+  margin-left: 5px;
+  padding-top: 3px;
+  color: #404040;
+  opacity: 0.6;
+}
+
+.tsk-person {
+  float: right;
+  font-size: 12px;
+  margin-right: 10px;
+  padding-top: 2px;
+}
+
+.gray {
+  background: #f2f2f2;
+  margin: 0 auto;
+  border-left: 2px solid #FFF;
+  border-right: 2px solid #FFF;
+}
+
+/***********************
+Media Queries
+***********************/
+@media(min-width: 769px) {
+ 
+   .box-top {
+    width: 700px;
+  }
+  
+  .box-bottom {
+  width: 700px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #f2f2f2;
+}
+
+  .create {
+    margin-bottom: 20px;
+    margin-right: 2px;
+    padding-bottom: 20px;
+    flex: 1 40%;
+  }
+  
+  .existing {
+    flex: 1 45%;
+    margin-left: 2px;
+  }
+}

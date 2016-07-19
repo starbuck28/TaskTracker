@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Task Tracker</title>
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div class="box-top">
+  <div class="header">
+    <h1>Task Tracker</h1>
+    <h4>v2.0</h4>
+  </div>
+</div> <!-- end .box-top -->
+  
+<div class="box-bottom">
+ <div class="create">
+   <form>
+      <h3>Create a Task</h3>
+       <div>
+         <label for="task">Task Name</label>
+         <input type="text" id="task" name="task_name" />
+       </div>
+       <div>
+         <label for="date">Date</label>
+         <input type="text" id="date" name="date" />
+       </div>
+       <div>
+         <label for="assigned">Assigned To</label>
+         <input type="text" id="assigned" name="assigned_to" />
+       </div>
+       <button type="button">Submit</button>
+     </form>
+  </div> <!-- end .create -->
+  
+  <div class="existing">
+    <h3>Existing Tasks</h3>
+    <div class="existing_tasks">
+      <ul class="tsk-lst">                  
+      </ul>
+    </div>
+  </div> <!-- end .existing -->
+  
+</div> <!-- end .box-bottom -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
